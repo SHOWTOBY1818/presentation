@@ -203,6 +203,18 @@ textarea, select, input, button { outline: none; }
 	margin: 0 auto;
 	width: 80%;
 }
+/* Style for API JSON */
+#dohmh #dohmh_container { 
+	position: relative; 
+	display: flex;
+	flex-wrap: wrap;
+}
+#dohmh_container .boxes {
+	float: left;
+	width: 30%;
+	margin-right: 1%;
+}
+
 .form-wrap .form-group {
 	margin-bottom: 10px;
 }
@@ -246,6 +258,7 @@ textarea, select, input, button { outline: none; }
 .form-wrap fieldset .sidecheckbox input {
 	display: inline;
 }
+
 .form-wrap .btn {
 	color: #fff;
 	font-size: 18px;
@@ -311,80 +324,21 @@ transition: color 12s, font-size 12s;
    -moz-transition: color 12s, font-size 12s;
      -o-transition: color 12s, font-size 12s;
 */
+@media (max-width: 420px) {
+	#dohmh_container .boxes {
+		width: 100%;
+	}
+}
 
 @media (max-width: 720px) {
 	.banner h1 {
 		font-size: 32px;
-		transition: font 3s ease;
+		/*transition: font 3s ease;*/
 	}
 }
 @media (min-width: 960px) {
 	.banner h1 {
 		font-size: 60px;
-		transition: font 5s ease;
+		/*transition: font 5s ease;*/
 	}
 }
-
-My number 3
-
-
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-</style>
-</head>
-<body>
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>HTML Iframes</h2>
-<p>You can use the height and width attributes to specify the size of the iframe:</p>
-
-<iframe src="demo_iframe.htm" height="200" width="300"></iframe>
-
-</body>
-</html>
-
-<h2>CSS Layout Flexbox</h2>
-<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect.</p>
-<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 and earlier versions.</p>
-
-<header>
-  <h2>Cities</h2>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
-</section>
-
-<footer>
-  <p>Footer</p>
-</footer>
-
-</body>
-</html>
-
-
