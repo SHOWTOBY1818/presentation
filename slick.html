@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Show</title>
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-styles.css">
+
+</head>
+<body>
+<div class="your-class">
+  <div>
+  	<div id="single">
+	</div>
+
+  	<img src="img/logo.jpeg" alt="My Spa of Dreams">
+  </div>
+  
+  <div>
+  	<img src="img/IMG-9982.JPG" alt="Life is Precious">
+  </div>
+  
+  <div>
+  	<img src="img/IMG-9983.JPG"  alt="Education is the Problem">
+  </div>
+  
+  <div>
+  	<img src="img/IMG-9986.JPG" alt="Music City">
+  </div>
+
+  <div>
+  	<img src ="img/IMG-9984.JPG" alt ="NeW York City Resilience">
+  </div>
+
+  <div>
+  	<img src ="img/IMG-8838.JPG" alt= "Better late than never...">
+  </div>
+
+  </div>
+
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+
+    	//$('#single').slick ();
+
+      $('.your-class').slick(
+
+      		{
+      			infinite: true,
+      			slidesToShow: 3,
+      			slidesToScroll: 3
+
+
+
+      		});
+       
+      });
+  	</script>
+  
+</body>
+</html>
